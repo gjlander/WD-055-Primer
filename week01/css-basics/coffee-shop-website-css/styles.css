@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height , remove this line and see what happens with the form inputs!*/
+    margin: 0;
+    padding: 0;
+}
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #20161f; /* Soft blue background */
+    color: #c59f60; /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cfdce1;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0000ee;
+}
+
+header {
+    background-color: #db924b;
+    color: #110802;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #c9c7c9;
+    border-bottom: 2px solid #db924b;
+    padding-bottom: 10px;
+}
+
+p,
+li {
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Images */
+figure {
+    width: 100%; /* Responsive images */
+    max-width: 500px; /* Maximum size */
+    display: block; /* Remove default inline styling */
+    margin: 10px auto; /* Center images */
+}
+
+/* List Styling */
+ul {
+    padding: 0;
+    list-style-type: none; /* Removes bullet points */
+    width: 100%;
+}
+
+li {
+    background-color: #10576d;
+    color: #cfdce1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for the list items */
+    display: inline-block;
+}
+a {
+    color: #cfdce1;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners for the form */
+}
+
+input,
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light grey border */
+}
+
+button {
+    background-color: #0066cc; /* Bright blue */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+}
+
+button:hover {
+    background-color: #005cbf; /* Slightly darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
