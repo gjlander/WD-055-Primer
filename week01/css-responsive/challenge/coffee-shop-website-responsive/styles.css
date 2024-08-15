@@ -12,6 +12,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.dropdown {
+    display: none;
+}
 
 nav a {
     text-decoration: none;
@@ -100,7 +103,7 @@ textarea {
 }
 
 button {
-    background-color: #0066cc; /* Bright blue */
+    background-color: #10576d; /* Bright blue */
     color: #fff; /* White text */
     padding: 10px 20px;
     border: none;
@@ -123,36 +126,26 @@ footer {
     width: 100%;
 }
 
-.mobile {
-    display: none;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .desktop {
         display: none;
     }
-    .mobile {
+    .dropdown {
         display: block;
     }
-}
-
-/* Small devices (portrait tablets and large phones, 600px to 768px) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    /* CSS rules for small screens */
-}
-
-/* Medium devices (landscape tablets, 768px to 992px) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    /* CSS rules for medium screens */
-}
-
-/* Large devices (laptops/desktops, 992px to 1200px) */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-    /* CSS rules for large screens */
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1201px) {
-    /* CSS rules for extra large screens */
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: #110802;
+        padding: 0.25rem;
+        border-radius: 5px;
+    }
+    .dropdown:hover .dropdown-content,
+    li {
+        display: block;
+    }
 }

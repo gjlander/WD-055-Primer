@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+
+body {
+    background-color: skyblue;
+    position: relative;
+    height: 100vh;
+}
+
+.window {
+    background-color: #c0c0c0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    width: 50%;
+    border: 3px white solid;
+    border-bottom: #424141 3px solid;
+    border-right: #424141 3px solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+header {
+    padding: 0.25rem 0.75rem;
+    background: rgb(11, 35, 103);
+    background: linear-gradient(
+        90deg,
+        rgba(11, 35, 103, 1) 0%,
+        rgba(171, 205, 242, 1) 100%
+    );
+}
+h1 {
+    color: white;
+    font-size: 1rem;
+}
+.body {
+    padding: 1rem;
+}
+.text {
+    padding: 1rem 0;
+}
+
+img {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    image-rendering: pixelated;
+    box-shadow: 0.125rem 0.125rem 0.125rem #808080;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+p {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+button {
+    float: right;
+    margin-bottom: 1rem;
+    background-color: #c0c0c0;
+    padding: 0.25rem 0.4rem;
+    font-weight: 500;
+    border: solid 3px white;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    html {
+        font-size: 24px;
+    }
+    .window {
+        min-width: 600px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    html {
+        font-size: 32px;
+    }
+    .window {
+        min-width: 800px;
+    }
+}
