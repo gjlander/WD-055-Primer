@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Abstract</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#4c5fd5',
+                        },
+                    },
+                },
+            };
+        </script>
+        <style type="text/tailwindcss">
+            @layer components {
+                .service {
+                    @apply flex gap-4 leading-normal;
+
+                    img {
+                        @apply block h-1/3;
+                    }
+                }
+            }
+        </style>
+        <!-- <link rel="stylesheet" href="styles.css" /> -->
+    </head>
+    <body>
+        <header
+            class="flex justify-between items-center py-4 px-8 bg-black text-white"
+        >
+            <div class="flex items-center gap-1">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(255, 255, 255, 1)"
+                >
+                    <path
+                        d="M3.102 20.898c.698.699 1.696 1.068 2.887 1.068 1.742 0 3.855-.778 6.012-2.127 2.156 1.35 4.27 2.127 6.012 2.127 1.19 0 2.188-.369 2.887-1.068 1.269-1.269 1.411-3.413.401-6.039-.358-.932-.854-1.895-1.457-2.859a16.792 16.792 0 0 0 1.457-2.859c1.01-2.626.867-4.771-.401-6.039-.698-.699-1.696-1.068-2.887-1.068-1.742 0-3.855.778-6.012 2.127-2.156-1.35-4.27-2.127-6.012-2.127-1.19 0-2.188.369-2.887 1.068C1.833 4.371 1.69 6.515 2.7 9.141c.359.932.854 1.895 1.457 2.859A16.792 16.792 0 0 0 2.7 14.859c-1.01 2.626-.867 4.77.402 6.039zm16.331-5.321c.689 1.79.708 3.251.052 3.907-.32.32-.815.482-1.473.482-1.167 0-2.646-.503-4.208-1.38a26.611 26.611 0 0 0 4.783-4.784c.336.601.623 1.196.846 1.775zM12 17.417a23.568 23.568 0 0 1-2.934-2.483A23.998 23.998 0 0 1 6.566 12 23.74 23.74 0 0 1 12 6.583a23.568 23.568 0 0 1 2.934 2.483 23.998 23.998 0 0 1 2.5 2.934A23.74 23.74 0 0 1 12 17.417zm6.012-13.383c.657 0 1.152.162 1.473.482.656.656.638 2.117-.052 3.907-.223.579-.51 1.174-.846 1.775a26.448 26.448 0 0 0-4.783-4.784c1.562-.876 3.041-1.38 4.208-1.38zM4.567 8.423c-.689-1.79-.708-3.251-.052-3.907.32-.32.815-.482 1.473-.482 1.167 0 2.646.503 4.208 1.38a26.448 26.448 0 0 0-4.783 4.784 13.934 13.934 0 0 1-.846-1.775zm0 7.154c.223-.579.51-1.174.846-1.775a26.448 26.448 0 0 0 4.783 4.784c-1.563.877-3.041 1.38-4.208 1.38-.657 0-1.152-.162-1.473-.482-.656-.656-.637-2.117.052-3.907z"
+                    ></path>
+                    <circle cx="12" cy="12" r="2.574"></circle>
+                </svg>
+                <h1 class="text-xl">Abstract | Help Center</h1>
+            </div>
+            <div class="hidden md:block">
+                <button class="border py-2 px-4 rounded hover:bg-slate-900">
+                    Submit a request
+                </button>
+                <button class="bg-primary border border-white py-2 px-4">
+                    Sign in
+                </button>
+            </div>
+            <button class="border py-1 px-2 md:hidden">Menu</button>
+        </header>
+        <main>
+            <section
+                class="bg-[#dadbf1] h-[40vh] flex flex-col justify-center items-center gap-4"
+            >
+                <h2 class="text-4xl">How can we help?</h2>
+                <input class="w-1/2 p-1" type="text" placeholder="Search" />
+            </section>
+            <section class="grid grid-cols-2 grid-rows-3 p-12 gap-4">
+                <div class="service">
+                    <img
+                        src="https://help.abstract.com/hc/theming_assets/01HZH4D4GACXWCRKK6JHQ730XD"
+                        alt=""
+                    />
+                    <div class="service-text">
+                        <h3>Using Abstract</h3>
+                        <p>
+                            Abstract lets you manage, version, and document your
+                            designs in one place.
+                        </p>
+                        <a href="">Learn More →</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img
+                        src="https://help.abstract.com/hc/theming_assets/01HZH4D45NKFCN3388ZCBJB878"
+                        alt=""
+                    />
+                    <div class="service-text">
+                        <h3>Manage your account</h3>
+                        <p>
+                            Configure your account settings, such as your email,
+                            profile details, and password.
+                        </p>
+                        <a href="">Learn More →</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img
+                        src="https://help.abstract.com/hc/theming_assets/01HZH4D3M8CRR0C2V5GREVR6HK"
+                        alt=""
+                    />
+                    <div class="service-text">
+                        <h3>Manage organizations, teams, and projects</h3>
+                        <p>
+                            Use Abstract organizations, teams, and projects to
+                            organize your people and your work.
+                        </p>
+                        <a href="">Learn More →</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img
+                        src="https://help.abstract.com/hc/theming_assets/01HZH4D38K1S1M9WKWSQZE62YE"
+                        alt=""
+                    />
+                    <div class="service-text">
+                        <h3>Manage billing</h3>
+                        <p>Change subscriptions and payment details.</p>
+                        <a href="">Learn More → </a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img
+                        src="https://help.abstract.com/hc/theming_assets/01HZH4D3S3QY5190TZE3H8ZSVK"
+                        alt=""
+                    />
+                    <div class="service-text">
+                        <h3>Authenticate to Abstract</h3>
+                        <p>
+                            Set up and configure SSO, SCIM, and Just-in-Time
+                            provisioning.
+                        </p>
+                        <a href="">Learn More →</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img
+                        src="https://help.abstract.com/hc/theming_assets/01HZH4D3G4S2K93BN3WJPT8600"
+                        alt=""
+                    />
+                    <div class="service-text">
+                        <h3>Abstract support</h3>
+                        <p>et in touch with a human.</p>
+                        <a href="">Learn More →</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black text-white p-4 flex justify-around">
+            <div class="flex gap-8">
+                <nav>
+                    <h3 class="mb-2 text-xl">Abstract</h3>
+                    <ul>
+                        <li>Start trial</li>
+                        <li>Pricing</li>
+                        <li>Download</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3 class="mb-2 text-xl">Resources</h3>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Help Center</li>
+                        <li>Release Notes</li>
+                        <li>Status</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3 class="mb-2 text-xl">Community</h3>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                        <li>Facebook</li>
+                        <li>Dribble</li>
+                        <li>Podcast</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3 class="mb-2 text-xl">Company</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Legal</li>
+                        <li>
+                            <h4>Contact Us</h4>
+                            <p>info@abstract.com</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="self-end">
+                <p>© Copyright 2024</p>
+                <p>Abstract Studio Design, Inc.</p>
+                <p>All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
