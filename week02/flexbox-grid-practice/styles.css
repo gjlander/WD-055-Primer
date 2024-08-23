@@ -26,6 +26,22 @@ header {
 h1 {
     font-size: 1.5rem;
 }
+.submit-btn {
+    background-color: black;
+    border: solid 2px white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+}
+.sign-in-btn {
+    background-color: #4c5fd5;
+    border: solid 2px #4c5fd5;
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 2px;
+    border: none;
+    font-weight: bold;
+}
 
 .hero {
     background-color: #dadbf1;
