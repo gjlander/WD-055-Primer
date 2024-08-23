@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Abstract</title>
+        <title>Abstract | Sign In</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -17,18 +17,6 @@
                 },
             };
         </script>
-        <style type="text/tailwindcss">
-            @layer components {
-                .service {
-                    @apply flex gap-4 leading-normal;
-
-                    img {
-                        @apply block h-1/3;
-                    }
-                }
-            }
-        </style>
-        <!-- <link rel="stylesheet" href="styles.css" /> -->
     </head>
     <body class="flex flex-col min-h-screen">
         <header
@@ -65,93 +53,23 @@
             </div>
             <button class="border rounded py-1 px-2 md:hidden">Menu</button>
         </header>
-        <main class="flex-grow">
-            <section
-                class="bg-secondary h-[40vh] flex flex-col justify-center items-center gap-4"
+        <main class="flex-grow flex flex-col items-center">
+            <h2 class="text-6xl mb-8">Sign In</h2>
+            <form
+                class="border flex flex-col gap-4 w-1/2 p-8 rounded-md border-black"
             >
-                <h2 class="text-4xl">How can we help?</h2>
-                <input class="w-1/2 p-1" type="text" placeholder="Search" />
-            </section>
-            <section class="grid grid-cols-2 grid-rows-3 p-12 gap-4">
-                <div class="service">
-                    <img
-                        src="https://help.abstract.com/hc/theming_assets/01HZH4D4GACXWCRKK6JHQ730XD"
-                        alt=""
-                    />
-                    <div class="service-text">
-                        <h3>Using Abstract</h3>
-                        <p>
-                            Abstract lets you manage, version, and document your
-                            designs in one place.
-                        </p>
-                        <a href="">Learn More →</a>
-                    </div>
-                </div>
-                <div class="service">
-                    <img
-                        src="https://help.abstract.com/hc/theming_assets/01HZH4D45NKFCN3388ZCBJB878"
-                        alt=""
-                    />
-                    <div class="service-text">
-                        <h3>Manage your account</h3>
-                        <p>
-                            Configure your account settings, such as your email,
-                            profile details, and password.
-                        </p>
-                        <a href="">Learn More →</a>
-                    </div>
-                </div>
-                <div class="service">
-                    <img
-                        src="https://help.abstract.com/hc/theming_assets/01HZH4D3M8CRR0C2V5GREVR6HK"
-                        alt=""
-                    />
-                    <div class="service-text">
-                        <h3>Manage organizations, teams, and projects</h3>
-                        <p>
-                            Use Abstract organizations, teams, and projects to
-                            organize your people and your work.
-                        </p>
-                        <a href="">Learn More →</a>
-                    </div>
-                </div>
-                <div class="service">
-                    <img
-                        src="https://help.abstract.com/hc/theming_assets/01HZH4D38K1S1M9WKWSQZE62YE"
-                        alt=""
-                    />
-                    <div class="service-text">
-                        <h3>Manage billing</h3>
-                        <p>Change subscriptions and payment details.</p>
-                        <a href="">Learn More → </a>
-                    </div>
-                </div>
-                <div class="service">
-                    <img
-                        src="https://help.abstract.com/hc/theming_assets/01HZH4D3S3QY5190TZE3H8ZSVK"
-                        alt=""
-                    />
-                    <div class="service-text">
-                        <h3>Authenticate to Abstract</h3>
-                        <p>
-                            Set up and configure SSO, SCIM, and Just-in-Time
-                            provisioning.
-                        </p>
-                        <a href="">Learn More →</a>
-                    </div>
-                </div>
-                <div class="service">
-                    <img
-                        src="https://help.abstract.com/hc/theming_assets/01HZH4D3G4S2K93BN3WJPT8600"
-                        alt=""
-                    />
-                    <div class="service-text">
-                        <h3>Abstract support</h3>
-                        <p>et in touch with a human.</p>
-                        <a href="">Learn More →</a>
-                    </div>
-                </div>
-            </section>
+                <label>
+                    Username: <input class="border border-black" type="text" />
+                </label>
+                <label>
+                    Password: <input class="border border-black" type="text" />
+                </label>
+                <button
+                    class="bg-primary hover:bg-secondary rounded border border-white py-2 px-4"
+                >
+                    Sign In
+                </button>
+            </form>
         </main>
         <footer class="bg-black text-white p-4 flex justify-around">
             <div class="flex gap-8">
